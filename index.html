@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dialed In CNC Solutions — CNC Repair That Keeps Production Moving | Dayton, OH</title>
+<meta name="description" content="Owner-led CNC electrical & mechanical repair, diagnostics, calibration, alignment and preventive maintenance for metal manufacturing shops within 150 miles of Dayton, Ohio. Haas, Fanuc, Mazak, Okuma, Siemens, Mitsubishi, DMG MORI." />
+<meta name="theme-color" content="#0a0a0b" />
+<meta property="og:title" content="Dialed In CNC Solutions — Get Your CNC Machines Dialed In." />
+<meta property="og:description" content="CNC electrical & mechanical repair that keeps production moving. Dayton, Ohio · 150-mile on-site service · Kevin answers every call." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="styles.css" />
+<script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+
+<!-- Overlays -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true">
+  <div class="cursor__ring"></div>
+  <div class="cursor__dot"></div>
+</div>
+
+<!-- Scroll gauge -->
+<div class="gauge" aria-hidden="true">
+  <svg viewBox="0 0 60 60"><circle class="track" cx="30" cy="30" r="27"/><circle class="prog" cx="30" cy="30" r="27"/></svg>
+  <div class="gauge__pct">00</div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Dialed In CNC Solutions home">
+    <svg class="brand__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" stroke="#c0c0c0" stroke-width="2"/>
+      <circle cx="50" cy="50" r="38" stroke="#3a3a3d" stroke-width="1"/>
+      <g stroke="#888">
+        <line x1="50" y1="8" x2="50" y2="16"/><line x1="50" y1="84" x2="50" y2="92"/>
+        <line x1="8" y1="50" x2="16" y2="50"/><line x1="84" y1="50" x2="92" y2="50"/>
+        <line x1="21" y1="21" x2="26" y2="26"/><line x1="74" y1="74" x2="79" y2="79"/>
+        <line x1="79" y1="21" x2="74" y2="26"/><line x1="26" y1="74" x2="21" y2="79"/>
+      </g>
+      <line class="needle" x1="50" y1="50" x2="72" y2="30" stroke="#f5f5f5" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="50" cy="50" r="5" fill="#ff5a1f"/>
+    </svg>
+    <span class="brand__type"><b>DIALED IN</b><small>CNC&nbsp;SOLUTIONS</small></span>
+  </a>
+
+  <nav class="nav__links" aria-label="Primary">
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="#process">Process</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav__cta">
+    <a class="nav__phone" href="tel:9379010935"><span class="live"></span><span class="txt">937-901-0935</span></a>
+    <a class="btn btn--signal" href="contact.html" data-magnetic><span>Request Service</span></a>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="menu" id="menu">
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="#process">Process</a>
+  <a href="contact.html">Contact</a>
+  <div class="meta">DAYTON, OHIO · 150-MILE RADIUS<br/>937-901-0935 · dialedincnc@gmail.com</div>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__bg-word" aria-hidden="true">PRECISION</div>
+
+  <!-- Animated dial gauge -->
+  <svg class="hero__dial" id="dial" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+    <circle cx="200" cy="200" r="196" stroke="rgba(192,192,192,0.10)" stroke-width="1"/>
+    <circle cx="200" cy="200" r="170" stroke="rgba(192,192,192,0.22)" stroke-width="1.5"/>
+    <circle cx="200" cy="200" r="120" stroke="rgba(192,192,192,0.10)" stroke-width="1"/>
+    <circle cx="200" cy="200" r="150" stroke="url(#chromeStroke)" stroke-width="2" stroke-dasharray="2 6"/>
+    <g id="ticks" stroke="rgba(192,192,192,0.55)"></g>
+    <text x="200" y="120" text-anchor="middle" fill="#888" font-family="Space Mono, monospace" font-size="11" letter-spacing="2">0.0001"</text>
+    <text x="200" y="300" text-anchor="middle" fill="#888" font-family="Space Mono, monospace" font-size="11" letter-spacing="2">CALIBRATED</text>
+    <line id="needle" x1="200" y1="200" x2="200" y2="58" stroke="#f5f5f5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="200" cy="200" r="10" fill="#16161a" stroke="#c0c0c0" stroke-width="1.5"/>
+    <circle cx="200" cy="200" r="4" fill="#ff5a1f"/>
+    <defs>
+      <linearGradient id="chromeStroke" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#8a8a8a"/><stop offset="1" stop-color="#e8e8e8"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div class="shell hero__inner">
+    <div class="hero__eyebrow reveal">
+      <span class="eyebrow"><span class="idx">(01)</span> CNC ELECTRICAL &amp; MECHANICAL REPAIR — DAYTON, OHIO</span>
+    </div>
+
+    <h1 class="display h-hero hero__head reveal-lines" aria-label="Get your machines dialed in.">
+      <span class="line"><span>GET YOUR</span></span>
+      <span class="line row2"><span class="chrome">MACHINES</span></span>
+      <span class="line row2"><span>DIALED</span> <span class="signal-word">IN.</span></span>
+    </h1>
+
+    <div class="hero__foot">
+      <div class="hero__sub reveal" data-delay="2">
+        <p class="lede">CNC repair that keeps production moving. Dayton-based troubleshooting, repair, calibration, alignment and preventive maintenance for metal manufacturing shops within 150 miles.</p>
+        <div class="hero__actions" style="margin-top:28px">
+          <a class="btn btn--signal" href="tel:9379010935" data-magnetic><span class="dot"></span><span>Machine Down? Call Now</span></a>
+          <a class="btn" href="contact.html" data-magnetic><span>Request CNC Service</span></a>
+        </div>
+      </div>
+
+      <div class="hero__scroll reveal" data-delay="3">
+        <div class="bar"></div>
+        <span class="coord">SCROLL · X+150.000 / Y-0.0002</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Platform ticker -->
+  <div class="ticker reveal" data-delay="4" aria-hidden="true">
+    <div class="ticker__track" id="ticker">
+      <span>HAAS</span><span>FANUC</span><span>MAZAK</span><span>OKUMA</span><span>SIEMENS</span><span>MITSUBISHI</span><span>DMG&nbsp;MORI</span><span>HEIDENHAIN</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM / SOLUTION ============ -->
+<section class="section problem" id="problem">
+  <div class="shell">
+    <div class="grid">
+      <div class="problem__head">
+        <span class="eyebrow reveal"><span class="idx">(02)</span> THE COST OF DOWNTIME</span>
+        <h2 class="display h-xl reveal" data-delay="1" style="margin-top:26px">
+          WHEN A MACHINE<br/>STOPS, <span class="outline">EVERYTHING</span><br/>STOPS.
+        </h2>
+      </div>
+      <div class="problem__aside reveal" data-delay="2">
+        <p class="lede">National firms take days. OEM dispatch takes longer. A generalist guesses. Meanwhile your spindle is silent and your deadline isn't moving.</p>
+        <p class="coord" style="margin-top:22px">FIVE FAILURE MODES THAT KILL PRODUCTION →</p>
+      </div>
+    </div>
+
+    <div class="pains reveal">
+      <div class="pain">
+        <span class="pain__n">01</span>
+        <span class="pain__t">Machine Downtime</span>
+        <span class="pain__d">Every idle hour is scrapped capacity you can't bill back. Uptime is the whole game.</span>
+      </div>
+      <div class="pain">
+        <span class="pain__n">02</span>
+        <span class="pain__t">Missed Deadlines</span>
+        <span class="pain__d">One late alarm code cascades into late parts, late shipments, and strained accounts.</span>
+      </div>
+      <div class="pain">
+        <span class="pain__n">03</span>
+        <span class="pain__t">OEM Wait Times</span>
+        <span class="pain__d">Factory service departments can take days to arrive. Your floor can't wait that long.</span>
+      </div>
+      <div class="pain">
+        <span class="pain__n">04</span>
+        <span class="pain__t">No Local Specialist</span>
+        <span class="pain__d">Generalist handymen don't speak servo, encoder, or geometry. The diagnosis costs you twice.</span>
+      </div>
+      <div class="pain">
+        <span class="pain__n">05</span>
+        <span class="pain__t">Complex Platforms</span>
+        <span class="pain__d">Most shops run one brand. When it's Fanuc one day and Okuma the next, you need range.</span>
+      </div>
+    </div>
+
+    <div class="solution-band grid">
+      <div style="grid-column:1 / span 7">
+        <span class="eyebrow reveal"><span class="idx">(—)</span> THE DIALED IN ANSWER</span>
+        <p class="display statement reveal" data-delay="1" style="margin-top:24px">
+          Precision is not a feature. <span class="signal-word">It's the standard.</span>
+        </p>
+      </div>
+      <div style="grid-column:9 / span 4; align-self:end" class="reveal" data-delay="2">
+        <p class="lede">One owner. A decade of multi-platform CNC service. On-site, fast, and diagnosed right the first time — so your machine gets back to cutting metal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="shell">
+    <div class="services__top">
+      <div>
+        <span class="eyebrow reveal"><span class="idx">(03)</span> WHAT WE DO</span>
+        <h2 class="display h-xl reveal" data-delay="1" style="margin-top:22px">SERVICE<br/><span class="chrome">CAPABILITIES</span></h2>
+      </div>
+      <p class="lede reveal" data-delay="2">Specialized electrical and mechanical CNC repair — exclusively for metal manufacturing machines, delivered on-site by Kevin personally.</p>
+    </div>
+
+    <div class="svc-list reveal">
+      <div class="svc" data-hover>
+        <span class="svc__n">01</span>
+        <h3 class="svc__title">Troubleshooting &amp; Diagnostics</h3>
+        <p class="svc__desc">Machine alarms, recurring faults, servo and axis issues, spindle symptoms, control and communication faults — diagnosed accurately and fast.</p>
+        <span class="svc__go"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="#f5f5f5" stroke-width="1.6" fill="none"/></svg></span>
+      </div>
+      <div class="svc" data-hover>
+        <span class="svc__n">02</span>
+        <h3 class="svc__title">CNC Electrical Repair</h3>
+        <p class="svc__desc">Controls, wiring, drives, sensors, motors, encoders, panels and power supply issues across Fanuc, Siemens, Mitsubishi, Heidenhain, Okuma, Haas, Mazak and DMG MORI.</p>
+        <span class="svc__go"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="#f5f5f5" stroke-width="1.6" fill="none"/></svg></span>
+      </div>
+      <div class="svc" data-hover>
+        <span class="svc__n">03</span>
+        <h3 class="svc__title">CNC Mechanical Repair</h3>
+        <p class="svc__desc">Machine tool accuracy, axis and lathe alignment, geometry issues, integrated machine tools, mill-turn equipment and mechanical reliability problems.</p>
+        <span class="svc__go"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="#f5f5f5" stroke-width="1.6" fill="none"/></svg></span>
+      </div>
+      <div class="svc" data-hover>
+        <span class="svc__n">04</span>
+        <h3 class="svc__title">5-Axis Calibration &amp; Repair</h3>
+        <p class="svc__desc">High-value specialty service for advanced 5-axis machines: calibration, accuracy validation and repair for confidence in every part.</p>
+        <span class="svc__go"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="#f5f5f5" stroke-width="1.6" fill="none"/></svg></span>
+      </div>
+      <div class="svc" data-hover>
+        <span class="svc__n">05</span>
+        <h3 class="svc__title">Installation &amp; Geometry</h3>
+        <p class="svc__desc">Setup support, geometry checks, accuracy validation and installation-related performance issues for new or relocated equipment.</p>
+        <span class="svc__go"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="#f5f5f5" stroke-width="1.6" fill="none"/></svg></span>
+      </div>
+      <div class="svc" data-hover>
+        <span class="svc__n">06</span>
+        <h3 class="svc__title">Preventive Maintenance</h3>
+        <p class="svc__desc">Scheduled service visits to identify wear, verify machine condition, reduce unplanned breakdowns and build long-term reliability.</p>
+        <span class="svc__go"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="#f5f5f5" stroke-width="1.6" fill="none"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF / RESULTS ============ -->
+<section class="section proof" id="proof">
+  <div class="shell">
+    <span class="eyebrow reveal"><span class="idx">(04)</span> WHY SHOPS CHOOSE DIALED IN</span>
+    <div class="stats" style="margin-top:34px">
+      <div class="stat reveal">
+        <div class="stat__n"><span data-count="10">0</span><span class="u">+</span></div>
+        <div class="stat__l">Years of hands-on<br/>CNC experience</div>
+      </div>
+      <div class="stat reveal" data-delay="1">
+        <div class="stat__n"><span data-count="150">0</span><span class="u">mi</span></div>
+        <div class="stat__l">On-site service<br/>radius from Dayton</div>
+      </div>
+      <div class="stat reveal" data-delay="2">
+        <div class="stat__n"><span data-count="8">0</span><span class="u">+</span></div>
+        <div class="stat__l">Major CNC platforms<br/>serviced &amp; supported</div>
+      </div>
+      <div class="stat reveal" data-delay="3">
+        <div class="stat__n"><span data-count="1">0</span><span class="u">:1</span></div>
+        <div class="stat__l">Owner answers &amp; shows up.<br/>No dispatcher, no ticket</div>
+      </div>
+    </div>
+
+    <div class="quote-wrap">
+      <div class="quote reveal">
+        <blockquote><span class="q">“</span>Over 10 years of multi-platform CNC service experience with a precision-first approach to minimizing downtime and supporting long-term machine reliability.<span class="q">”</span></blockquote>
+        <div class="attr">
+          <span class="avatar">KS</span>
+          <div><b>Kevin Steinbrugge</b><span>OWNER · DIALED IN CNC SOLUTIONS LLC</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="platforms">
+      <span class="eyebrow reveal">MOST SHOPS KNOW ONE BRAND · WE KNOW THEM ALL</span>
+      <div class="platforms__grid reveal" data-delay="1" style="margin-top:22px">
+        <div>HAAS<small>CONTROL · MILL · LATHE</small></div>
+        <div>FANUC<small>DRIVES · CNC</small></div>
+        <div>MAZAK<small>MILL-TURN · MULTI-AXIS</small></div>
+        <div>OKUMA<small>OSP CONTROL</small></div>
+        <div>SIEMENS<small>SINUMERIK</small></div>
+        <div>MITSUBISHI<small>ELECTRICAL · CNC</small></div>
+        <div>DMG&nbsp;MORI<small>5-AXIS · MILL-TURN</small></div>
+        <div>HEIDENHAIN<small>CONTROL · ENCODERS</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS (interactive) ============ -->
+<section class="section process" id="process">
+  <div class="shell">
+    <div class="services__top">
+      <div>
+        <span class="eyebrow reveal"><span class="idx">(05)</span> HOW IT WORKS</span>
+        <h2 class="display h-xl reveal" data-delay="1" style="margin-top:22px">FROM ALARM<br/>CODE TO <span class="signal-word">CUTTING</span></h2>
+      </div>
+      <p class="lede reveal" data-delay="2">No ticket system. No hand-offs. One call reaches Kevin — the same person who diagnoses, repairs and verifies your machine.</p>
+    </div>
+
+    <div class="process__wrap" style="margin-top:clamp(30px,6vh,64px)">
+      <div class="steps reveal" id="steps">
+        <div class="steps__line"><i id="stepsProgress"></i></div>
+
+        <button class="step -active" data-step="0">
+          <span class="step__num">01</span>
+          <span><span class="step__t">You Call Kevin</span><br/><span class="step__k">DIRECT LINE · NO DISPATCHER</span></span>
+        </button>
+        <button class="step" data-step="1">
+          <span class="step__num">02</span>
+          <span><span class="step__t">On-Site Diagnosis</span><br/><span class="step__k">ACCURATE THE FIRST TIME</span></span>
+        </button>
+        <button class="step" data-step="2">
+          <span class="step__num">03</span>
+          <span><span class="step__t">Repair &amp; Calibrate</span><br/><span class="step__k">ELECTRICAL · MECHANICAL · 5-AXIS</span></span>
+        </button>
+        <button class="step" data-step="3">
+          <span class="step__num">04</span>
+          <span><span class="step__t">Verify &amp; Prevent</span><br/><span class="step__k">ACCURACY VALIDATED · PM PLANNED</span></span>
+        </button>
+      </div>
+
+      <div class="step-panel" id="stepPanel">
+        <span class="step-panel__index" id="panelIndex">01</span>
+        <div class="step-panel__body">
+          <h3 class="step-panel__t" id="panelTitle">You Call Kevin</h3>
+          <p class="step-panel__d" id="panelDesc">Machine down? You get the owner on the phone — not a queue. A decade of CNC experience starts triaging the symptom, the platform and the alarm code before the truck even rolls.</p>
+          <div class="step-panel__meta" id="panelMeta">
+            <div><small>Response</small><b>FAST</b></div>
+            <div><small>Who you reach</small><b>THE OWNER</b></div>
+            <div><small>Coverage</small><b>150 MILES</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFER ============ -->
+<section class="section offer" id="offer">
+  <div class="shell">
+    <div class="services__top">
+      <div>
+        <span class="eyebrow reveal"><span class="idx">(06)</span> REQUEST SERVICE</span>
+        <h2 class="display h-xl reveal" data-delay="1" style="margin-top:22px">HOW WE<br/>SHOW UP</h2>
+      </div>
+      <p class="lede reveal" data-delay="2">Three ways to work with Dialed In. Pricing is scoped to the machine and the fault — call for current availability and a straight answer.</p>
+    </div>
+
+    <div class="offer__grid reveal">
+      <div class="plan">
+        <span class="plan__k">MODE 01</span>
+        <h3 class="plan__t">Emergency Repair</h3>
+        <div class="plan__price">Call for availability <small>· priority response</small></div>
+        <p class="plan__d">Machine down and production stopped. The fastest path back to cutting metal.</p>
+        <ul class="plan__list">
+          <li>Rapid on-site diagnosis</li>
+          <li>Electrical &amp; mechanical repair</li>
+          <li>Servo, drive &amp; alarm-code faults</li>
+          <li>Owner on the job — not a sub</li>
+        </ul>
+        <a class="btn" href="tel:9379010935" data-magnetic><span>Call 937-901-0935</span></a>
+      </div>
+
+      <div class="plan -featured">
+        <span class="plan__k">MODE 02</span>
+        <h3 class="plan__t">Scheduled Service</h3>
+        <div class="plan__price">Scoped per job <small>· booked to your window</small></div>
+        <p class="plan__d">Diagnostics, calibration, alignment and repair planned around your production schedule.</p>
+        <ul class="plan__list">
+          <li>5-axis calibration &amp; validation</li>
+          <li>Geometry &amp; alignment correction</li>
+          <li>Installation &amp; relocation support</li>
+          <li>Multi-platform expertise</li>
+        </ul>
+        <a class="btn btn--signal" href="#contact" data-magnetic><span class="dot"></span><span>Request Service</span></a>
+      </div>
+
+      <div class="plan">
+        <span class="plan__k">MODE 03</span>
+        <h3 class="plan__t">Maintenance Plan</h3>
+        <div class="plan__price">Recurring <small>· built for uptime</small></div>
+        <p class="plan__d">Scheduled visits that catch wear before it stops production and protect long-term accuracy.</p>
+        <ul class="plan__list">
+          <li>Preventive maintenance visits</li>
+          <li>Machine condition verification</li>
+          <li>Wear &amp; accuracy tracking</li>
+          <li>Priority when something breaks</li>
+        </ul>
+        <a class="btn" href="#contact" data-magnetic><span>Plan a Visit</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="finale" id="contact">
+  <div class="finale__bg" aria-hidden="true">DIALED IN</div>
+  <div class="shell finale__inner">
+    <span class="eyebrow reveal" style="justify-content:center;display:inline-flex"><span class="idx">(07)</span> MACHINE DOWN?</span>
+    <h2 class="reveal" data-delay="1" style="margin-top:22px">LET'S GET IT<br/><span class="chrome">DIALED IN.</span></h2>
+    <a class="phone reveal" data-delay="2" href="tel:9379010935"><span class="live"></span>937-901-0935</a>
+    <p class="finale__sub reveal" data-delay="3">DAYTON, OHIO · SERVING WITHIN 150 MILES · DIALEDINCNC@GMAIL.COM</p>
+    <div class="finale__actions reveal" data-delay="3">
+      <a class="btn btn--signal" id="requestBtn" href="mailto:dialedincnc@gmail.com?subject=CNC%20Service%20Request&body=Shop%20name%3A%0AMachine%2Fplatform%3A%0ASymptom%20or%20alarm%20code%3A%0ALocation%3A%0ABest%20number%3A" data-magnetic><span class="dot"></span><span>Request CNC Service</span></a>
+      <a class="btn" href="mailto:dialedincnc@gmail.com" data-magnetic><span>Email Kevin</span></a>
+    </div>
+    <p class="coord reveal" data-delay="4" style="margin-top:40px">CINCINNATI · COLUMBUS · INDIANAPOLIS · LIMA · TOLEDO · NORTHERN KENTUCKY</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <b>DIALED IN</b>
+        <p>CNC electrical &amp; mechanical repair that keeps production moving. Owner-led, multi-platform, precision-first — for metal manufacturing shops across the Ohio corridor.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Troubleshooting &amp; Diagnostics</a></li>
+          <li><a href="services.html">Electrical Repair</a></li>
+          <li><a href="services.html">Mechanical Repair</a></li>
+          <li><a href="services.html">5-Axis Calibration</a></li>
+          <li><a href="services.html">Preventive Maintenance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Dialed In</a></li>
+          <li><a href="about.html">Who We Serve</a></li>
+          <li><a href="services.html">Service Capabilities</a></li>
+          <li><a href="contact.html">Request Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:9379010935">937-901-0935</a></li>
+          <li><a href="mailto:dialedincnc@gmail.com">dialedincnc@gmail.com</a></li>
+          <li>Dayton, OH · 150-mile radius</li>
+          <li>Owner: Kevin Steinbrugge</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 DIALED IN CNC SOLUTIONS LLC · ALL RIGHTS RESERVED</p>
+      <p>PRECISION IS NOT A FEATURE. IT'S THE STANDARD.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

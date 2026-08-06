@@ -1,0 +1,13 @@
+{
+  "name": "dialed-in-cnc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dialed In CNC Solutions — marketing website (static HTML/CSS/JS)",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
