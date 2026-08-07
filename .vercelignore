@@ -1,7 +1,5 @@
-# Keep the Vercel deployment 100% static — no Node signals.
-# These are local-development only and must NOT be uploaded, or Vercel may
-# try to build/run a Node serverless function instead of serving static files.
+# Local-development only — excluded from the static production deployment.
+# (package.json IS included so Vercel sees a normal static project.)
 server.js
-package.json
 .claude
 README.md
