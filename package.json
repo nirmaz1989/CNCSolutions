@@ -2,10 +2,9 @@
   "name": "dialed-in-cnc",
   "version": "1.0.0",
   "private": true,
-  "description": "Dialed In CNC Solutions — marketing website (static HTML/CSS/JS)",
+  "description": "Dialed In CNC Solutions — static marketing website (HTML/CSS/JS). No build step; deployed as static files on Vercel.",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js"
+    "dev": "node server.js"
   },
   "engines": {
     "node": ">=16"

@@ -1,0 +1,4 @@
+# Local-only files — not needed for the static production deployment
+server.js
+.claude
+README.md
