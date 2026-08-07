@@ -1,4 +1,7 @@
-# Local-only files — not needed for the static production deployment
+# Keep the Vercel deployment 100% static — no Node signals.
+# These are local-development only and must NOT be uploaded, or Vercel may
+# try to build/run a Node serverless function instead of serving static files.
 server.js
+package.json
 .claude
 README.md
