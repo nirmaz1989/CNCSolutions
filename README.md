@@ -19,6 +19,13 @@ npm run dev
 ```
 (or `node server.js` — same thing, no dependencies to install). Then open **http://localhost:4321**. (Any static host works too — it's just HTML/CSS/JS. Drop these files on Netlify, Vercel, GitHub Pages, or any web host.)
 
+## Deploying to Vercel
+This is a **static site with no build step**. `vercel.json` configures it:
+- `cleanUrls: true` → pages served at `/services`, `/about`, `/contact` (the `.html` is hidden)
+- `trailingSlash: false` → keeps the relative `styles.css` / `main.js` links resolving to the site root (this is what prevents the "HTML loads but CSS doesn't" problem)
+
+In Vercel Project Settings, the framework should be **Other** with **no Build Command** and **no Output Directory** (files are served from the repo root). `server.js` is local-only and is excluded from the deploy via `.vercelignore`. Pushing to `main` triggers an automatic redeploy.
+
 ## Design system (from the brand kit)
 - **Palette:** Precision Black `#0a0a0b`/`#111113`, Machine Silver `#c0c0c0`, Industrial Gray `#888888`, Clean White `#f5f5f5`, plus one restrained **alarm-signal amber `#ff5a1f`** used sparingly for urgent/interactive states.
 - **Type:** Bebas Neue (display), Montserrat (body), Space Mono (technical labels) — loaded from Google Fonts.
